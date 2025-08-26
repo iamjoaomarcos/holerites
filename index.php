@@ -53,13 +53,13 @@ $foi_submit = ($_SERVER['REQUEST_METHOD'] === 'POST');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
-      --bg:#0f172a;        /* slate-900 */
-      --card:#111827;      /* gray-900 */
-      --muted:#94a3b8;     /* slate-400 */
-      --text:#e5e7eb;      /* gray-200 */
-      --accent:#22c55e;    /* green-500 */
+      --bg:linear-gradient(to bottom, #f0f0f0ff, #ffffffff); /* white-900 */
+      --card:#f2f2f2;      /* gray-900 */
+      --muted:#f0f0f0;     /* slate-400 */
+      --text:#262626;      /* gray-200 */
+      --accent:#0477BF;    /* green-500 */
       --danger:#ef4444;    /* red-500 */
-      --line:#1f2937;      /* gray-800 */
+      --line:#262626;      /* gray-800 */
     }
     *{box-sizing:border-box}
     body{
@@ -79,22 +79,22 @@ $foi_submit = ($_SERVER['REQUEST_METHOD'] === 'POST');
     .row{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
     label{font-weight:600; font-size:14px}
     input{
-      width:100%; padding:10px 12px; background:#0b1220; color:var(--text);
+      width:100%; padding:10px 12px; background:#212226; color:var(--text);
       border:1px solid var(--line); border-radius:10px; outline:none;
     }
-    input:focus{border-color:#334155}
-    .hint{font-size:12px; color:var(--muted)}
+    input:focus{border-color:#262626}
+    .hint{font-size:12px; color:#262626}
     .actions{display:flex; gap:10px; margin-top:16px}
     button{
       appearance:none; border:0; padding:12px 16px; border-radius:12px; font-weight:700; cursor:pointer;
     }
-    .primary{background:var(--accent); color:#04210f}
-    .secondary{background:#0b1220; color:var(--text); border:1px solid var(--line)}
+    .primary{background:var(--accent); color:#f2f2f2}
+    .secondary{background:#f2f2f2; color:var(--text); border:1px solid var(--line)}
     table{width:100%; border-collapse:collapse; margin-top:8px}
     th,td{padding:10px 8px; border-bottom:1px solid var(--line); text-align:left}
     tfoot td{font-weight:800; font-size:18px}
     .money{font-variant-numeric: tabular-nums}
-    .pill{display:inline-block; background:#0b1220; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:12px; color:var(--muted)}
+    .pill{display:inline-block; background:#262626; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:12px; color:var(--muted)}
   </style>
 </head>
 <body>
